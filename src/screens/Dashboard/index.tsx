@@ -3,8 +3,7 @@
  * - yarn add react-native-responsive-fontsize
 */
 import React from 'react';
-
-import { Text, View } from 'react-native';
+import { HighlightCard } from '../../components/HighlightCard';
 
 import {
     Container,
@@ -15,7 +14,7 @@ import {
     User,
     UserGreeting,
     UserName,
-    
+    Icon
 } from './styles';
 
 export function Dashboard(){
@@ -29,9 +28,12 @@ export function Dashboard(){
                             <UserGreeting>Olá, </UserGreeting>
                             <UserName>Tiago</UserName>
                         </User>
-                    </UserInfo> 
+                    </UserInfo>   
+                    <Icon name="power"/>
                 </UserWrapper>         
             </Header>
+
+            <HighlightCard />
         </Container>
     )
 }
